@@ -1,0 +1,154 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+	background-color: #232931;
+}
+
+main {
+	width: 650px;
+    display: flex;
+	flex-flow: column;
+    align-items: center;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+	color: #eeeeee;
+}
+
+header {
+	width: 96%;
+    margin: 100px 0 10px;
+    display: flex;
+    justify-content: space-between;
+}
+
+header .options {
+    display: flex;
+    justify-content: flex-start;
+}
+
+.violet, .green, .yellow {
+    width: 25px;
+    height: 25px;
+    margin: 0 5px 0 10px;
+    cursor: pointer;
+}
+
+.violet {
+    background-color: #f54291;
+}
+
+.green {
+    background-color: #32e0c4;
+}
+
+.yellow {
+	background-color: #ffd31d;
+}
+
+.options .language {
+	margin: 0 10px;
+    font-size: 25px;
+	color: #c4c4c4;
+	text-transform: uppercase;
+    cursor: pointer;
+}
+
+.options .active {
+    color: #32e0c4;
+}
+
+hr {
+    width: 100%;
+}
+
+section {
+    margin: 25px 0;
+	text-align: center;
+}
+
+label[for=counter] {
+	width: 300px;
+	display: inline-block;
+    font-size: 16px;
+	font-weight: bold;
+    letter-spacing: 0.3px;
+}
+
+input[type=text] {
+    width: 300px;
+    height: 40px;
+    border: 1px solid black;
+	margin: 25px 0;
+	font-size: 18px;
+    text-align: center;
+    vertical-align: middle;
+}
+
+input[type=submit] {
+    width: 150px;
+    height: 40px;
+    border: none;
+    background-color: #32e0c4;
+	color: #eeeeee;
+	font-size: 16px;
+    vertical-align: middle;
+	cursor: pointer;
+}
+
+section .counterContainer {
+    width: 348px;
+    height: 100px;
+	display: flex;
+    justify-content: space-evenly;
+	align-items: center;
+    border: 3px solid #32e0c4;
+}
+
+.counterContainer .box {
+    width: 62px;
+    height: 62px;
+	display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid #32e0c4;
+    font-size: 40px;
+}
+
+.counterContainer .caption {
+	margin-top: 5px;
+    font-size: 14px;
+    font-weight: bold;
+	text-align: center;
+	text-transform: uppercase;
+}
+
+#infoContainer {
+    width: 348px;
+    height: 100px;
+	padding: 20px 0;
+	border: 3px solid #eeeeee;
+	background-color: #232931;
+	text-align: center;
+}
+
+#infoContainer .message {
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 10px;
+	color: #eeeeee;
+}
+
+#infoContainer .okBtn {
+    width: 100px;
+    height: 25px;
+    border: none;
+	font-size: 16px;
+    background-color: #32e0c4;
+	color: #eeeeee;
+    cursor: pointer;
+}
