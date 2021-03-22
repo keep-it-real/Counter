@@ -10,7 +10,7 @@ showOrHide(infoContainer, "none");
 showOrHide(counterContainer, "none");
 
 let start = (daysId, hoursId, minId, secId, dateId) => {
-	showOrHide(counterContainer, "flex");
+    showOrHide(counterContainer, "flex");
     let getRemain = (end) => {
         let t = Date.parse(end) - (new Date()).getTime();
         let seconds = Math.floor( (t/1000) % 60);
@@ -48,7 +48,7 @@ okBtn.addEventListener("click", () => showOrHide(infoContainer, "none"));
 
 let languages = {
     "pl": {
-		"label": "Wpisz datę i godzinę, by zacząć odliczanie. Prawidłowy format to: rok-miesiąc-dzień godz:min:sek",
+	"label": "Wpisz datę i godzinę, by zacząć odliczanie. Prawidłowy format to: rok-miesiąc-dzień godz:min:sek",
         "daysLang": "dni",
         "hoursLang": "godz",
         "minLang": "min",
@@ -56,7 +56,7 @@ let languages = {
         "message": "Odliczanie zakończone"
     },
     "en": {
-		"label": "Enter a combination of date and time to start the countdown. The correct format is: year-month-day h:min:sec",
+	"label": "Enter a combination of date and time to start the countdown. The correct format is: year-month-day h:min:sec",
         "daysLang": "days",
         "hoursLang": "hours",
         "minLang": "min",
@@ -79,17 +79,11 @@ langEl.forEach(el => {
         langOpt.querySelector(".active").classList.remove("active");
         el.classList.add("active");
         let attr = el.getAttribute("lang");
-		formLabel.textContent = languages[attr].label;
+	formLabel.textContent = languages[attr].label;
         daysLabel.textContent = languages[attr].daysLang;
         hoursLabel.textContent = languages[attr].hoursLang;
         minLabel.textContent = languages[attr].minLang;
         secLabel.textContent = languages[attr].secLang;
-		messageInfo.textContent = languages[attr].message;
+	messageInfo.textContent = languages[attr].message;
     });
 });
-
-
-
-
-
-
